@@ -8,7 +8,7 @@ import { DateRange } from "react-date-range";
 import { format } from "date-fns";
 
 function App() {
-  const [destination, setDestination] = useState("");
+  // const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -25,7 +25,7 @@ function App() {
           type="text"
           placeholder="Where are you going?"
           className="headerSearchInput"
-          onChange={(e) => setDestination(e.target.value)}
+          // onChange={(e) => setDestination(e.target.value)}
         />
       </div>
       <div className="headerSearchItem">
