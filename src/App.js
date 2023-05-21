@@ -14,24 +14,24 @@ import { format } from "date-fns";
 
 function App() {
   // const [destination, setDestination] = useState("");
-  const [openDate, setOpenDate] = useState(false);
-  const [location, setLocation] = useState("");
-  const [date, setDate] = useState([
-    {
-      startDate: new Date(),
-      endDate: new Date(new Date().getTime() + 7 * 24 * 60 * 60 * 1000),
-      key: "selection",
-    },
-  ]);
-  console.log(location);
-  console.log(date);
-  const handleSearch = () => {
-    const url = `https://joingopher.com/destinations/guestbook?page=1&query%5Bproperty%5D%5Btext%5D=Las%20Vegas%2C%20Nevada%2C%20United%20States&query%5Bproperty%5D%5Bcity%5D=${encodeURIComponent(
-      location
-    )}&query%5Bproperty%5D%5Bstate%5D=Nevada&query%5Bproperty%5D%5Bcountry%5D=United%20States&query%5Bproperty%5D%5Bid%5D=22416&query%5Bproperty%5D%5Btype%5D=City&query%5Bproperty%5D%5Bcenter%5D%5B0%5D=36.17497&query%5Bproperty%5D%5Bcenter%5D%5B1%5D=-115.13722&stayDates%5BcheckinDate%5D=[CHECK-IN-DATE]2&stayDates%5BcheckoutDate%5D=[CHECK-OUT-DATE]`;
+  // const [openDate, setOpenDate] = useState(false);
+  // const [location, setLocation] = useState("");
+  // const [date, setDate] = useState([
+  //   {
+  //     startDate: new Date(),
+  //     endDate: new Date(new Date().getTime() + 7 * 24 * 60 * 60 * 1000),
+  //     key: "selection",
+  //   },
+  // ]);
+  // console.log(location);
+  // console.log(date);
+  // const handleSearch = () => {
+  //   const url = `https://joingopher.com/destinations/guestbook?page=1&query%5Bproperty%5D%5Btext%5D=Las%20Vegas%2C%20Nevada%2C%20United%20States&query%5Bproperty%5D%5Bcity%5D=${encodeURIComponent(
+  //     location
+  //   )}&query%5Bproperty%5D%5Bstate%5D=Nevada&query%5Bproperty%5D%5Bcountry%5D=United%20States&query%5Bproperty%5D%5Bid%5D=22416&query%5Bproperty%5D%5Btype%5D=City&query%5Bproperty%5D%5Bcenter%5D%5B0%5D=36.17497&query%5Bproperty%5D%5Bcenter%5D%5B1%5D=-115.13722&stayDates%5BcheckinDate%5D=[CHECK-IN-DATE]2&stayDates%5BcheckoutDate%5D=[CHECK-OUT-DATE]`;
 
-    window.open(url, "_blank");
-  };
+  //   window.open(url, "_blank");
+  // };
   return (
     // <div className="headerSearch">
     //   <div className="headerSearchItem">
